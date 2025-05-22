@@ -67,7 +67,7 @@ public class FoodWasteItemServiceImpl implements FoodWasteItemService {
         FoodWasteItem serviceFoodWasteItemById = repositoryService.getFoodWasteItemById(foodWasteItemDto.getId());
         Objects.requireNonNull(foodWasteItemDto);
         mapper.updateEntityFromDto(foodWasteItemDto, serviceFoodWasteItemById);
-        return mapper.toDto(repositoryService.updateFoodWasteItem(serviceFoodWasteItemById));
+        return mapper.toDto(repositoryService.createFoodWasteItem(serviceFoodWasteItemById));
     }
 
     @Override
