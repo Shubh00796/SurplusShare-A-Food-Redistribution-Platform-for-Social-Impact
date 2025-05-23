@@ -9,6 +9,7 @@ import java.util.List;
 import java.util.Optional;
 
 public interface EcommerseOrderForEcommerseRepository extends JpaRepository<OrderForEcommerse, Long> {
-    Optional<OrderForEcommerse> findByCustomerId(Long customerId);
+    List<OrderForEcommerse> findByCustomerId(Long customerId);
+
     List<OrderForEcommerse> findByCustomerIdAndOrderDateBetween(Long customerId, LocalDate startDate, LocalDate endDate);
 }

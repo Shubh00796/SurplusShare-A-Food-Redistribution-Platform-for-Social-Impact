@@ -1,9 +1,6 @@
 package com.FoodWasteManagementSystem.Domain;
 
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -15,8 +12,9 @@ import java.time.LocalDate;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-@Table(name = "orders")
-public class Order {
+@Table(name = "ordersforecom")
+@Entity
+public class OrderForEcommerse {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
