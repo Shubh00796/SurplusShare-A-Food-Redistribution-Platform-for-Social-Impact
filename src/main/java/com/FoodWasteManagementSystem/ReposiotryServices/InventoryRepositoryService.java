@@ -1,6 +1,7 @@
-package com.FoodWasteManagementSystem.Reposiotry;
+package com.FoodWasteManagementSystem.ReposiotryServices;
 
 import com.FoodWasteManagementSystem.Domain.Inventory;
+import com.FoodWasteManagementSystem.Reposiotry.InventoryRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Component;
 
