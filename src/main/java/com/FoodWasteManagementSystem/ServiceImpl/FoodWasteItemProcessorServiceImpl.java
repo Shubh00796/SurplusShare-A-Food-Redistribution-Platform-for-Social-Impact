@@ -45,7 +45,7 @@ public class FoodWasteItemProcessorServiceImpl implements FoodWasteItemProcessor
 
     @Override
     public FoodWasteItemProcessorDto updateFoodWasteItemProcessor(FoodWasteItemProcessorDto foodWasteItemProcessorDto) {
-        Objects.requireNonNull(foodWasteItemProcessorDto, "foodWasteItemProcessorDto can not be null");
+        Objects.requireNonNull(foodWasteItemProcessorDto, "foodWasteItemProcessorDto can not be null here");
         checkIfIdIsExistsOrNot(foodWasteItemProcessorDto);
         FoodWasteItemProcessor mapperEntity = mapper.toEntity(foodWasteItemProcessorDto);
         mapper.updateEntityFromDto(foodWasteItemProcessorDto, mapperEntity);
