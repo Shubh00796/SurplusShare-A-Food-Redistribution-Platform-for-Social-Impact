@@ -35,7 +35,7 @@ public class StructureServiceImpl implements StructureService {
 
     @Override
     public StructureDto getStructureById(Long id) {
-        Objects.requireNonNull(id, "Id CAN NOT BE NULL");
+        Objects.requireNonNull(id, "Id CAN NOT BE NULL HERE");
         StructureEntity structureById = repositoryService.getStructureById(id);
         return mapper.toDto(structureById);
     }
