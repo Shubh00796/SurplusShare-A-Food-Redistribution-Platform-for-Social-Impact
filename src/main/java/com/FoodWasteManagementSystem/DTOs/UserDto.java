@@ -1,33 +1,27 @@
-package com.FoodWasteManagementSystem.Domain;
+package com.FoodWasteManagementSystem.DTOs;
 
 import com.FoodWasteManagementSystem.Enums.Role;
-import jakarta.persistence.*;
-import lombok.*;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 
 import java.time.Instant;
 
-// User.java
-@Entity
-@Table(name = "users_for_issue")
 @Getter
 @Setter
 @Builder
-@AllArgsConstructor
 @NoArgsConstructor
-public class User {
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+@AllArgsConstructor
+public class UserDto {
     private Long id;
-    @Column(unique = true)
     private String username;
-    @Column(unique = true)
     private String email;
     private String password;
     private String fullName;
     private String address;
     private String passwordResetToken;
     private Instant passwordResetTokenExpiration;
-    @Enumerated(EnumType.STRING)
     private Role role;
 }
-
