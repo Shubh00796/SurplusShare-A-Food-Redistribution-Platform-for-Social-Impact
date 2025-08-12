@@ -1,3 +1,6 @@
+<<<<<<< master
+# -Food-Waste-Management-System
+=======
 # SurplusShare: A Food Redistribution Platform for Social Impact
 
 ## Overview
@@ -287,3 +290,4 @@ monitoring_and_health: |
       metrics_path: '/actuator/prometheus'
       static_configs:
         - targets: ['host.docker.internal:8080']
+>>>>>>> main
