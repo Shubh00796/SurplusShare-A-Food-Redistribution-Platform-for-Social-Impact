@@ -1,6 +1,4 @@
-<<<<<<< master
 # -Food-Waste-Management-System
-=======
 # SurplusShare: A Food Redistribution Platform for Social Impact
 
 ## Overview
